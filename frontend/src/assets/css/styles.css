@@ -5,51 +5,68 @@
   height: 100vh;
 }
 /* Home */
-
-.banner {
-  background: linear-gradient(to bottom, #6cb4ee, #3586c6);
-  color: white;
-  padding: 50px 0;
+/* banner */
+#main {
+  background-color: #fff;
   position: relative;
+}
+.banner {
+  position: relative;
+  width: 100%;
   overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.banner1 {
+  background-image: url(https://mauweb.monamedia.net/seosieucap/wp-content/uploads/2019/02/Banner-Background-Image.jpg);
+  height: 70vh;
 }
 
 .main-content {
   position: relative;
+  width: 100%;
+  z-index: 1;
 }
-
+.banner-content {
+  max-width: 100%;
+}
 .banner-inner {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
 }
-
-.banner-bg {
+.fill {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  background: url("https://mauweb.monamedia.net/seosieucap/wp-content/uploads/2019/02/Banner-Background-Image.jpg")
-    no-repeat center center;
-  background-size: cover;
-  z-index: -1;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-
+.banner-bg {
+  overflow: hidden;
+}
+.bg.bg-loaded {
+  height: 100%;
+}
 .text-white {
   color: #fff;
 }
 
-.text-container {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .text-inner {
   max-width: 600px;
+  margin-left: 60px;
+  margin-top: 80px;
 }
-
+.img-inner {
+  margin-left: 70px;
+  margin-top: 40px;
+}
 .text-left {
   text-align: left;
 }
@@ -132,4 +149,74 @@
 .img-inner img {
   max-width: 100%;
   height: auto;
+}
+/* second banner */
+.second-banner {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.second-banner .col-inner {
+  padding: 20px;
+  text-align: center;
+}
+
+.second-banner h3 {
+  font-size: 2em;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.second-banner p {
+  font-size: 1.2em;
+  color: #495057;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.second-banner img.banner-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .second-banner .col-md-6 {
+    text-align: left;
+  }
+}
+.backgroundCustome1 {
+  background-color: rgb(142, 204, 86);
+}
+.backgroundCustome2 {
+  background-color: rgb(42, 171, 75);
+}
+.backgroundCustome3 {
+  background-color: rgb(42, 171, 166);
+}
+.backgroundCustome4 {
+  background-color: rgb(42, 112, 171);
+}
+.gap-element {
+  display: block;
+  height: auto;
+  padding-top: 60px;
+}
+.btnCus {
+  border-radius: 4px;
+  margin-top: 26px;
+}
+.five-banner {
+  background-color: #495057;
+}
+.menu-ietm-footer {
+  text-decoration: none !important;
+  font-size: 14px;
+  color: #fff;
+}
+#footer {
+  background-color: #212d31;
+}
+.customLayout {
+  margin-left: -12px !important;
+  margin-right: -12px !important;
 }

@@ -41,7 +41,7 @@
 }
 
 .top-bar .btn {
-  background-color: #ff9800;
+  background-color: #4d6dcf;
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -51,7 +51,7 @@
 }
 
 .top-bar .btn:hover {
-  background-color: #e68900;
+  background-color: #254bc7;
 }
 
 .main-header {
