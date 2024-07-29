@@ -1,0 +1,95 @@
+.header {
+    width: 100%;
+}
+
+.top-bar {
+    background-color: #343a40;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar ul {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar ul li {
+    margin-right: 1rem;
+}
+
+.top-bar ul li:last-child {
+    margin-right: 0;
+}
+
+.top-bar ul li i {
+    font-size: 1.2rem;
+}
+
+.top-bar ul li p {
+    margin: 0;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.top-bar ul li .bi-house-door,
+.top-bar ul li .bi-telephone {
+    margin-right: 0.5rem;
+}
+
+.top-bar .btn {
+    background-color: #4d6dcf;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.top-bar .btn:hover {
+    background-color: #254bc7;
+}
+
+.main-header {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50px; /* Điều chỉnh chiều cao logo */
+}
+
+.main-header-right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-right .menu-item {
+    margin-right: 1.5rem;
+    font-size: 1rem;
+}
+
+.main-header-right .menu-item:last-child {
+    margin-right: 0;
+}
+
+.main-header-right .menu-item a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.main-header-right .menu-item a:hover {
+    color: #007bff;
+}

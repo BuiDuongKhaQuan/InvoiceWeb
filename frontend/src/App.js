@@ -1,14 +1,10 @@
 import { Fragment } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import DefaultLayout, { DefaultLayoutAdmin } from '~/layouts';
-import { privateRoutes, publicRouters } from '~/routes';
-import { ProtectedRoute } from './components/ProtectedRoute';
+import DefaultLayout from '~/layouts';
+import { publicRouters } from '~/routes';
 import ScrollToTop from './components/ScrollToTop';
-import { useAuth } from './hooks/useAuth';
 
 function App() {
-    const { user } = useAuth();
-
     const renderRoute = (route, index, Layout) => {
         const Page = route.component;
         return (
@@ -33,7 +29,7 @@ function App() {
                         const Layout = route.layout || (route.layout === null ? Fragment : DefaultLayout);
                         return renderRoute(route, index, Layout);
                     })}
-                    <Route element={<ProtectedRoute isAllowed={!!user} />}>
+                    {/* <Route element={<ProtectedRoute isAllowed={!!user} />}>
                         {privateRoutes.map((route, index) => {
                             const Layout = route.layout || (route.layout === null ? Fragment : DefaultLayoutAdmin);
                             return (
@@ -50,7 +46,7 @@ function App() {
                                 />
                             );
                         })}
-                    </Route>
+                    </Route> */}
                 </Routes>
             </div>
         </Router>

@@ -1,6 +1,14 @@
 import config from '~/config';
+import ResetPass from '~/layouts/User/components/InnerProfile/ResetPass';
+import Product from '~/layouts/User/components/InvoiceItem/Product';
 
 import { Home, Login, Register, ForgotPassword } from '~/pages/User';
+import AboutUs from '~/pages/User/AboutUs';
+import Blog from '~/pages/User/Blog';
+import Invoices from '~/pages/User/Invoices';
+import PrivacyPolicy from '~/pages/User/PrivacyPolicy';
+import Profile from '~/pages/User/Profile';
+import Service from '~/pages/User/Service';
 
 const { routes, roles } = config;
 
@@ -9,6 +17,16 @@ const publicRouters = [
     { path: routes.login, component: Login },
     { path: routes.register, component: Register },
     { path: routes.forgotpass, component: ForgotPassword },
+    { path: routes.blog, component: Blog },
+    { path: routes.service, component: Service },
+    { path: routes.about_us, component: AboutUs },
+    { path: routes.profile, component: Profile },
+    { path: routes.resetpass, component: ResetPass },
+    { path: routes.privacypolicy, component: PrivacyPolicy },
+    { path: routes.product, component: Product },
+    { path: routes.invoices, component: Invoices },
+
+    // { path: routes.re, component: Profile },
 ];
 
 const privateRoutes = [

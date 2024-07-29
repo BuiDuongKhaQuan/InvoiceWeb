@@ -1,0 +1,11 @@
+.img-inner {
+    max-width: 100%;
+    /* max-height: fit-content; */
+    /* height: 30%; */
+}
+
+.box-image .img-inner {
+    height: 150px; /* Điều chỉnh chiều cao hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+}
